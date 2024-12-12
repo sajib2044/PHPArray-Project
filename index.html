@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <h1>Shopping Cart</h1>
+    <form action="cart.php" method="post">
+        <label for="product">Select Product:</label>
+        <select name="product" id="product">
+            <option value="Laptop">Laptop - $200</option>
+            <option value="Smartphone">Smartphone - $100</option>
+            <option value="Headphones">Headphones - $30</option>
+            <option value="Keyboard">Keyboard - $30</option>
+            <option value="Tablet">Tablet - $150</option>
+            <option value="Monitor">Monitor - $180</option>
+            <option value="Mouse">Mouse - $20</option>
+            <option value="Webcam">Webcam - $50</option>
+            <option value="External Hard Drive">External Hard Drive - $75</option>
+            <option value="Smartwatch">Smartwatch - $120</option>
+
+        </select>
+        <button type="submit">Add to Cart</button>
+    </form>
+    <h2>Your Cart</h2>
+    <p><a href="cart.php?view_cart=1">View Cart</a></p>
+    <p><a href="cart.php?clear_cart=1">Clear Cart</a></p>
+</body>
+
+</html>
